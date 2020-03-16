@@ -8,6 +8,8 @@ namespace SampleGithubProject
         {
             Console.WriteLine(FindBiggestNumber(10, 20, 30));
             Console.WriteLine(TestNumberInRange(10, 0, 20));
+            Console.WriteLine(IsPrimal(13)); 
+            Console.WriteLine(D20());
         }
 
         static int FindBiggestNumber(int number1, int number2, int number3)
@@ -26,6 +28,25 @@ namespace SampleGithubProject
         static bool TestNumberInRange(int testNumber, int minValue, int maxValue)
         {
             return testNumber >= minValue && testNumber <= maxValue;
+        }
+
+
+        static bool IsPrimal(int number)
+        {
+            for (int i = 2; i < number / i; i++)
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        static int D20()
+        {
+            Random rnd = new Random();
+            return rnd.Next(1, 21);
         }
 
     }
