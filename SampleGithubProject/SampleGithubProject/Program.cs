@@ -6,7 +6,8 @@ namespace SampleGithubProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(IsPrimal(13));
+            Console.WriteLine(IsPrimal(13)); 
+            Console.WriteLine(D20());
         }
 
         static bool IsPrimal(int number)
@@ -19,6 +20,12 @@ namespace SampleGithubProject
                 }
             }
             return true;
+        }
+
+        static int D20()
+        {
+            Random rnd = new Random();
+            return rnd.Next(1, 21);
         }
 
     }
