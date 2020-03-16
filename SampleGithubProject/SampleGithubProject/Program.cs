@@ -7,6 +7,7 @@ namespace SampleGithubProject
         static void Main(string[] args)
         {
             Console.WriteLine(FindBiggestNumber(10, 20, 30));
+            Console.WriteLine(TestNumberInRange(10, 0, 20));
         }
 
         static int FindBiggestNumber(int number1, int number2, int number3)
@@ -20,6 +21,11 @@ namespace SampleGithubProject
                 return number2;
             }
             return number3;
+        }
+
+        static bool TestNumberInRange(int testNumber, int minValue, int maxValue)
+        {
+            return testNumber >= minValue && testNumber <= maxValue;
         }
 
     }
