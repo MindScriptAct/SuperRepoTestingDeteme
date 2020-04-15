@@ -6,5 +6,9 @@ namespace SampleGithubProject
 {
     class Test
     {
+        public void DoStuff()
+        {
+            Console.WriteLine("stuff...");
+        }
     }
 }
