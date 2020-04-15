@@ -8,11 +8,11 @@ namespace SampleGithubProject
     {
         public void DoStuff()
         {
-            Console.WriteLine("stuff...");
+            Console.WriteLine("stuff!!...");
         }
         public void Break()
         {
-            Console.WriteLine("Break!");
+            Console.WriteLine("B!!reak!");
         }
     }
 }
