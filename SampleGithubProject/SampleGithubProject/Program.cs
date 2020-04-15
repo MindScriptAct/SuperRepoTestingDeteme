@@ -6,6 +6,7 @@ namespace SampleGithubProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world!");
             Console.WriteLine(FindBiggestNumber(10, 20, 30));
             Console.WriteLine(TestNumberInRange(10, 0, 20));
             Console.WriteLine(IsPrimal(13)); 
